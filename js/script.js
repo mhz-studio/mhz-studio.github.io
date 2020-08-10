@@ -1,9 +1,5 @@
 $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-
-    //>=, not <=
-    if (scroll >= 500) {
-        //clearHeader, not clearheader - caps H
+    if ($(window).scrollTop() >= 500) {
         $('.scroll-animations').addClass('animated fadeInUp');
     }
 });
